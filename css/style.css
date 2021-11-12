@@ -4,14 +4,38 @@
     box-sizing: border-box;
 }
 
+.white{
+    color: white;
+}
+
 .container{
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
     background-color: black;
+    overflow: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
+}
+
+.speaker-view{
+    height: 30px;
+    width: 100%;
+    font-size: 80%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    padding: 3px;
+}
+
+.speaker-view > div{
+    height: 20px;
+    line-height: 20px;
+    background-color: grey;
+    margin-left: 5px;
+    border-radius: 3px;
+    padding: 1px 4px;
 }
 
 .item{
@@ -25,6 +49,9 @@ img{
 }
 
 .targhetta{
+    background-color: rgba(102, 102, 102, 0.6);
+    font-size: 80%;
+    padding: 2px 4px;
     position: absolute;
     left: 0;
     bottom: 0;
