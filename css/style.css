@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.item{
+    height: 100px;
+    position: relative;
+    margin: 5px;
+}
+
+img{
+    height: 100%;
+}
+
+.targhetta{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
